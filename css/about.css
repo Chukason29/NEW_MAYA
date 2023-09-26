@@ -1,0 +1,68 @@
+/* This is the standard css layout*/
+@import url('https://fonts.cdnfonts.com/css/bw-modelica-ss01');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Here insert css variables*/
+}
+.page-image{
+    width: 100%;
+    background-image: url('../images/12.png');
+    height: 15rem;
+    color: #ffffff;
+}
+.page-image > div{
+    background-color: rgba(10, 10, 10, .85);
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+}
+.about-section div{
+    width:100%;
+    padding: 1rem;
+}
+.about-section p{
+    font-family: 'Bw Modelica SS01', sans-serif;
+    line-height: 2rem;
+    font-weight: 800;
+}
+.about-section img{
+    max-width: 100%;
+}
+.about-section p{
+    margin-block-end: 1rem;
+}
+@media screen and (min-width: 578px) {
+    
+}
+@media screen and (min-width: 790px) {
+    .about-section{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    .about-section div:first-child{
+        width:80%;
+    }
+    .about-section a{
+        width: 20rem;
+        font-size: 1rem;
+    }
+    .about-section a > i{
+        margin-inline-end: 2rem;
+    }
+}
+@media screen and (min-width: 1025px) {
+    
+}
+@media screen and (min-width: 1201px) {
+    
+}

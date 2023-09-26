@@ -1,0 +1,451 @@
+/* This is the standard css layout*/
+@import url('https://fonts.cdnfonts.com/css/bw-modelica-ss01');
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bw Modelica SS01', sans-serif;
+                                                
+}
+:root{
+    --text-color:rgb(0,0,78);
+}                
+header{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top:0px;
+    z-index: 99;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(100, 100, 100, .6);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width:125px;
+    height:50px;
+}
+.blob1{
+    position: absolute;
+    width:100%;
+    height: 120%;
+    z-index: -1;
+    top: 0px;
+    right:0px; 
+    opacity: .2;
+}
+.logo span{
+    font-size: .6rem;
+    color:rgb(100,100,100);
+}
+nav{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bw Modelica SS01', sans-serif;
+                                                
+    padding-inline: .5rem;
+}
+.nav-toggle{
+    float: right;
+    line-height: 40px;
+    font-size: 2rem
+}
+
+#nav-check, .nav-toggle >.fa-x{
+    display: none;
+}
+#nav-check:checked ~ .nav-toggle >.fa-bars{
+    display: none;
+}
+#nav-check:checked ~ .nav-toggle >.fa-x{
+    display: block;
+}
+
+nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    font-size: .95rem;
+}
+#nav-check:checked ~ ul{
+    display: block;
+}
+nav > ul > li{
+    padding: .5rem;
+}
+nav > ul > li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+nav > .login > li a{
+    text-decoration: none;
+    color: #EB0C82;
+    padding: 10px 15px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+
+}
+nav > .login > li i{
+    color: rgb(39, 236, 0);
+    margin-inline-end: 1rem;
+}
+
+nav > ul > li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+main{
+    margin: 0;
+}
+.main-banner{
+    padding-inline: 1.5rem;
+    margin-block-end: 5rem;
+}
+.main-banner h1{
+    font-family: 'Bw Modelica SS01', sans-serif;
+    font-size: 3.3rem;
+    color: rgb(40, 40, 40);
+    font-weight: 900;
+    margin-block: 2rem ;
+}
+.main-banner h1 span:first-child{
+    color: rgb(26,123,129); 
+}
+.main-banner h1 span:last-child{
+    color: #EB0C82; 
+}
+.main-banner img{
+    max-width: 100%;
+}
+.main-banner p{
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: .045rem;
+    color: rgb(70, 70, 70);
+    margin-block-end: 1.5rem;
+}
+.main-banner p span{
+    font-family: 'Bw Modelica SS01', sans-serif;
+    font-weight: 600;  
+}
+
+.buttons > a {
+    width:100%;
+    background-image: linear-gradient(45deg, rgb(26,123,129), #EB0C82);
+    display: inline-block;
+    padding: .90rem .70rem;
+    text-decoration: none;
+    color:white;
+    border: none;
+    border-radius: 12px;
+    font-size: .85rem;
+    text-align: center;
+    margin-block-end: 3rem;
+}
+.main-banner .buttons > a:hover {
+    background-color: rgba(30, 30, 30, .6);
+}
+
+.get-insured i {
+    color: white;
+    margin-inline-end: 1rem;
+}
+
+.girlie{
+    width:100%;
+    padding: 5rem 1.5rem;
+    color:#EB0C82;
+    background-color: rgba(26,123,129,.05);
+}
+
+.girlie-img img{
+    max-width: 100%;
+}
+.girlie .buttons{
+    margin-block-end: 3rem;
+}
+.girlie p, .express p{
+    margin-block: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-family: 'Bw Modelica SS01', sans-serif;
+    font-size: 1.1rem;
+}
+.girlie h1, .express h1{
+    font-size: 3rem;
+    margin-block-end: 2rem;
+}
+.express{
+    width:100%;
+    padding: 5rem 1.5rem;
+    color: rgb(26,123,129);
+}
+.express div img{
+    max-width: 100%;
+    
+}
+.express div:first-child{
+    margin-block-end: 4rem;
+    
+}
+.express .buttons a{
+    background-color: #EB0C82;
+    box-shadow: 0px 5px 10px rgb(26,123,129);
+}
+
+.press-release{
+    padding: 2rem;
+}
+.press-release a{
+    text-decoration: none;
+}
+.press-release h1{
+    text-align: center;
+    margin-block-end: 3rem;
+    font-size: 3rem;
+}
+.press-release .news{
+    width: 100%;
+}
+.press-release .stations{
+    font-size: .9rem;
+    font-weight: 200;
+    position: relative;
+    top:-30px;
+}
+.news-flex img{
+    max-width: 100%;
+    margin-block-end: 1.5rem;
+    border-radius: 10px;
+}
+.news-flex p{
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: rgb(50,50,50);
+    margin-block-end: 2.5rem;
+}
+.partners{
+    max-width: 100%;
+    margin-block-end: 5rem;
+}
+.partners h1{
+    font-size:3rem;
+    margin-block-end: 2rem;
+    text-align: center;
+}
+.partners-div > div{
+    max-width: 100%;
+    margin-inline: auto;
+    height: auto;
+    padding-inline: 2rem;
+    box-shadow: 0px 0px 3px rgb(200,200,200);
+    margin-block: 2rem;
+}
+.partners img{
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.social-section{
+    background-image: linear-gradient(to right, rgb(26,123,129), #EB0C82);
+    color:white;
+    padding: 2.5rem 1rem;
+}
+.social-section > *{
+    margin-block-end: 1.2rem;
+}
+.connect{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.socials{
+    width: 100%;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socials i{
+    font-size: 2rem;
+}
+form > *{
+    display: block;
+    width:100%;
+}
+input[type = text]{
+    padding: .95rem;
+    border-radius: .3rem;
+    border: none;
+    margin-block-end: .5rem;
+    font-size: 1rem;
+}
+input[type = submit]{
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+    margin-block-end: .5rem;
+    background: red;
+    color:#ffffff;
+    font-size: 1rem;
+}
+footer{
+    padding: 1.5rem;
+    background-color: var(--text-color);
+    color: aliceblue;
+    text-align: center;
+}
+@media screen and (min-width: 570px){
+
+}
+@media screen and (min-width: 640px){
+    .main-banner .buttons > a {
+        font-size: 1.2rem;
+        width:350px;
+    }
+}
+@media screen and (min-width: 790px){
+    body{
+
+    }
+    
+    .nav-toggle{
+        float:none;
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav > *{
+        
+    }
+    ul.login{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul.nav-list{
+        display: flex;
+        gap:1.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .girlie{
+        display: flex;
+        width:100%;
+        padding: 5rem 7rem;
+        gap: 3rem;
+        color:#EB0C82;
+        background-color: rgba(26,123,129,.05);
+        font-family: 'Red Hat Display', sans-serif;
+        align-items: stretchs;
+    }
+    .girlie div:first-child, .express div:nth-child(2){
+        width: 60%;
+    }
+    .girlie p{
+        margin-block: .2rem;
+        text-align: justify;
+        line-height: 2rem;
+        font-family: 'Red Hat Display' sans-serif;
+    }
+    .girlie p:nth-child(4){
+        margin-block-end: 2rem;
+    }
+    
+    .girlie .buttons > a, .express .buttons > a{
+        width:20rem;
+    }
+    .express{
+        display: flex;
+        gap: 5rem;
+        padding: 5rem 7rem;
+        align-items: center;
+    }
+    .press-release .news{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-around;
+    }
+    .press-release .news > *{
+        flex-shrink: 0;
+        flex-basis: 28%;
+    }
+    .partners-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .partners-div > div{
+        width: 40%;
+        height: 100%;
+    }
+    .social-section{
+        padding: 3rem 5rem;
+    }
+    .socials{
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    form{
+        width:75%;
+        display: flex;
+    }
+    input[type = text]{
+        padding:1.5rem;
+        border-radius: .3rem 0rem 0rem .3rem;
+    }
+    input[type = submit]{
+        width:10rem;
+        border: .5rem solid #ffffff;
+        border-radius: 0rem .3rem .3rem 0rem;
+    }
+}
+@media screen and (min-width: 950px) {
+    nav{
+        padding-inline: 6.5rem;
+    }
+    section.main-banner{
+        display: flex;
+        align-items: center;
+        padding-inline: 6.5rem;
+    }
+    section.main-banner{
+        flex-grow: 1;
+    }
+    .main-banner h1{
+        margin-block-end: 2.5rem;
+        font-size: 4rem;
+    }
+    .main-banner p{
+        max-width: 75%;
+        font-size: 1.15rem;
+        margin-block-end: 2.5rem;
+    }
+    .main-banner-image{
+        width: 100%;
+    }
+    .main-banner-image img{
+        max-width: 100%;
+    }
+    .social-section{
+        padding: 3rem 11rem;
+    }
+    form{
+        width:75%;
+        display: flex;
+    }
+    input[type = submit]{
+        width:10rem;
+        border: .5rem solid #ffffff;
+        border-radius: 0rem .3rem .3rem 0rem;
+    }
+}
+@media screen and (min-width: 1201px) {
+
+}
